@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <body>
+        <style>
+            body {
+                background-color: rgb(47, 79, 79);
+                text-align: center;
+                color: rgb(227, 234, 240);
+                font-family: Calibri;
+            }
+
+            /* Change link colors to be friendly on the eyes */
+            a:link {
+                color: cyan;
+            }
+
+            a:visited {
+                color: rgb(99, 99, 255)
+            }
+            
+            /* boardAndGradient, board, and gradient work together to overlap the two images. I don't really know how it works, but it does, and so it stays. */
+            .boardAndGradient {
+                display: flex;
+                justify-content: center;
+            }
+
+            .board {
+                z-index: 1;
+            }
+
+            .gradient {
+                position: absolute;
+                z-index: 2;
+            }
+
+            /* Info for the start button */
+            .startButton {
+                background-color: azure;
+                border: none;
+                color: black;
+                padding: 20px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                z-index: 3;
+                position: relative;
+                top: -335px;
+            }
+        </style>
+
+        <h1>Welcome to Checker</h1>
+        <h2>Land of the Checker</h2>
+        <a href="https://i.imgur.com/kYEItQG.png">https://www.chess.com/home</a>
+        
+        <hr>
+
+        <div class="boardAndGradient">
+            <!-- Checkerboard and gradient to appear before start button is pushed -->
+            <img id="board" src="checkerboard.jpg" style="filter: brightness(25%);" class="board">
+            <img id="gradient" src="612x gradient.png" class="gradient">
+        </div>
+
+        <!-- Button to remove gradient and enter mode selection menu or something of the sort -->
+        <button id="Start Button" type="button" class="startButton"
+            onclick="document.getElementById('gradient').style.display = 'none';
+            document.getElementById('board').style.filter = 'none'
+            style.display = 'none'">
+            Press to Start
+        </button>
+    
+
+        <!-- beginnings of the game's script -->
+        <script>
+            // Rough draft of class for game pieces
+            class Piece {
+                constructor(team, xPos, yPos, isKinged) {
+                    this.team = team;
+                    this.xPos = xPos;
+                    this.yPos = yPos;
+                    this.isKinged = isKinged;
+                }
+
+                move() {
+                    return;
+                }
+
+            }
+
+            // Rough draft of class for checkerboard squares
+            class Square {
+                constructor(color, xPos, yPos, isOccupied, isKingSquare){
+                    this.color = color;
+                    this.xPos = xPos;
+                    this.yPos = yPos;
+                    this.isOccupied = isOccupied;
+                    this.isKingSquare = isKingSquare;
+                }
+            }
+
+
+
+        </script>
+
+    </body>
+</html>
