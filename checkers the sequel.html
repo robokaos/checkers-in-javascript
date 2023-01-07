@@ -35,12 +35,18 @@
 
             .deogonPiece {
                 width: 75px;
-                height: 75px
+                height: 75px;
             }
 
             .cementPiece {
                 width: 75px;
-                height: 75px
+                height: 75px;
+            }
+
+            .victoryText {
+                font-size: 100px;
+                font-family: Impact;
+                -webkit-text-stroke: 2px black;
             }
 
         </style>
@@ -51,36 +57,38 @@
 
         <hr>
 
+        <p id="victoryText" class="victoryText" style="display: none">SOMEONE FUCKIN LOST GET FUCKED MORON</p>        
+
         <table style="margin-left: auto; margin-right: auto;">
             <tr>
+                <td class="noPieceHere"></td>
+                <td><img id="0" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="1" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="2" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="3" class="deogonPiece" src="deogon checker piece.png"></td>
-                <td class="noPieceHere"></td>
-                <td><img id="4" class="deogonPiece" src="deogon checker piece.png"></td>
             </tr>
             <tr>
+                <td><img id="4" class="deogonPiece" src="deogon checker piece.png"></td>
+                <td class="noPieceHere"></td>
                 <td><img id="5" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="6" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="7" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="8" class="deogonPiece" src="deogon checker piece.png"></td>
-                <td class="noPieceHere"></td>
             </tr>
             <tr>
+                <td class="noPieceHere"></td>
+                <td><img id="8" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="9" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="10" class="deogonPiece" src="deogon checker piece.png"></td>
                 <td class="noPieceHere"></td>
                 <td><img id="11" class="deogonPiece" src="deogon checker piece.png"></td>
-                <td class="noPieceHere"></td>
-                <td><img id="12" class="deogonPiece" src="deogon checker piece.png"></td>
             </tr>
             <tr>
                 <td></td>
@@ -103,35 +111,36 @@
                 <td></td>
             </tr>
             <tr>
-                <td><img id="-12" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="12" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-11" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="13" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-10" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="14" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-9" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="15" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
             </tr>
             <tr>
                 <td class="noPieceHere"></td>
-                <td><img id="-8" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="16" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="=7" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="17" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-6" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="18" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-5" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="19" class="cementPiece" src="cement checker piece.png"></td>
             </tr>
             <tr>
-                <td><img id="-4" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="20" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-3" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="21" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-2" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="22" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
-                <td><img id="-1" class="cementPiece" src="cement checker piece.png"></td>
+                <td><img id="23" class="cementPiece" src="cement checker piece.png"></td>
                 <td class="noPieceHere"></td>
             </tr>
         </table>
+        <script src="checkers.js"></script>
     </body>
 </html>
